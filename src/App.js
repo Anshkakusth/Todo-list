@@ -15,7 +15,7 @@ import {
 } from "@mui/icons-material";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Custom color grading based on provided gradients
+// Custom color grading
 const colors = {
   light: {
     primary: "#2A7B9B",
