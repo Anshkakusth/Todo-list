@@ -15,7 +15,7 @@ import {
 } from "@mui/icons-material";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Custom color grading
+// Custom color grading based on provided gradients
 const colors = {
   light: {
     primary: "#2A7B9B",
@@ -99,7 +99,7 @@ const App = () => {
         paddingBottom: "2rem",
         transition: "background 0.5s ease"
       }}>
-        /* Gradient App Bar */
+        {/* Gradient App Bar */}
         <AppBar position="static" sx={{ 
           background: darkMode 
             ? `linear-gradient(90deg, ${colors.dark.primary} 0%, ${colors.dark.secondary} 100%)`
@@ -127,7 +127,7 @@ const App = () => {
         </AppBar>
 
         <Container maxWidth="sm" sx={{ py: 4 }}>
-  /* Glass Card */
+  {/* Glass Card */}
   <Paper sx={{ 
     p: 3,
     background: darkMode ? colors.dark.card : colors.light.card,
@@ -136,7 +136,7 @@ const App = () => {
     boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)",
     border: darkMode ? "1px solid rgba(0, 212, 255, 0.3)" : "1px solid rgba(255, 255, 255, 0.3)"
   }}>
-    /* Input Section */
+    {/* Input Section */}
     <Box sx={{ 
       display: "flex", 
       gap: 2, 
@@ -187,7 +187,7 @@ const App = () => {
       </Button>
     </Box>
 
-    /* Filter Chips */
+    {/* Filter Chips */}
     <Box sx={{ 
       display: "flex", 
       gap: 1, 
@@ -229,7 +229,7 @@ const App = () => {
       />
     </Box>
 
-    /* Todo List */
+    {/* Todo List */}
     {isLoading ? (
       <Box sx={{ 
         display: "flex", 
