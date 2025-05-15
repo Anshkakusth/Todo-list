@@ -47,7 +47,7 @@ const App = () => {
   // Load todos
   useEffect(() => {
     const timer = setTimeout(() => {
-      const savedTodos = JSON.parse(localStorage.getItem("gradient-todos")) || [];
+      const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
       setTodos(savedTodos);
       setIsLoading(false);
     }, 800);
@@ -56,7 +56,7 @@ const App = () => {
 
   // Save todos
   useEffect(() => {
-    localStorage.setItem("gradient-todos", JSON.stringify(todos));
+    localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
   const addTodo = () => {
